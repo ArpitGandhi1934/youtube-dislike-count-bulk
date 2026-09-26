@@ -1,0 +1,17 @@
+{
+  "name": "youtube-dislike-count-bulk",
+  "version": "1.0.0",
+  "description": "Bulk YouTube dislike counts (Return YouTube Dislike estimates), views and likes to CSV via the yugenox/youtube-scraper Apify Actor.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "start": "node --env-file=.env dislikes.mjs --file videos.example.txt"
+  },
+  "dependencies": {
+    "apify-client": "^2.25.0"
+  }
+}

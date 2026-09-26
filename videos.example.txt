@@ -1,0 +1,5 @@
+# One YouTube video per line: watch, youtu.be, shorts or embed links, or a bare 11-character ID. Lines starting with # are ignored.
+https://www.youtube.com/watch?v=9bZkp7q19f0
+https://www.youtube.com/watch?v=kffacxfA7G4
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+https://www.youtube.com/watch?v=jNQXAC9IVRw
