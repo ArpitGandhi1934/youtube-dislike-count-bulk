@@ -135,7 +135,7 @@ Examples at $2.00 per 1,000: 100 videos cost $0.20, a 500-video channel costs $1
 
 - Every input mode of the YouTube and Instagram scrapers in Node, Python, curl, Apify CLI and Google Sheets: [youtube-instagram-scraper-examples](https://github.com/ArpitGandhi1934/youtube-instagram-scraper-examples)
 - Instagram Reels to text in bulk: [instagram-reels-transcript-bulk](https://github.com/ArpitGandhi1934/instagram-reels-transcript-bulk)
-- Guides, pricing math and use cases: [yugenox-data.vercel.app](https://yugenox-data.vercel.app)
+- Guides on [yugenox-data.vercel.app](https://yugenox-data.vercel.app): [YouTube dislike count API](https://yugenox-data.vercel.app/youtube/dislike-count-api), [YouTube Data API alternative without quota](https://yugenox-data.vercel.app/youtube/data-api-alternative), [pricing calculator](https://yugenox-data.vercel.app/pricing-calculator)
 - The Actor itself, with its input form, output schema and reviews: [YouTube Scraper on Apify][store-yt]
 
 ## Credits and legal
