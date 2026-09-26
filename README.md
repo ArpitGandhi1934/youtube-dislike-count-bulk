@@ -50,7 +50,7 @@ The full row the Actor returns (description, hashtags, description links, subscr
 
 ```bash
 npm install
-node --env-file=.env dislikes.mjs https://www.youtube.com/watch?v=dQw4w9WgXcQ https://youtu.be/kffacxfA7G4
+node --env-file=.env dislikes.mjs "https://www.youtube.com/watch?v=dQw4w9WgXcQ" "https://youtu.be/kffacxfA7G4"
 node --env-file=.env dislikes.mjs --file videos.example.txt --out my-videos.csv
 node --env-file=.env dislikes.mjs --channel @veritasium --max 50 --out veritasium.csv
 ```
@@ -59,7 +59,7 @@ node --env-file=.env dislikes.mjs --channel @veritasium --max 50 --out veritasiu
 
 ```bash
 pip install -r requirements.txt
-python dislikes.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
+python dislikes.py "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 python dislikes.py --file videos.example.txt --out my-videos.csv
 python dislikes.py --channel @veritasium --max 50 --out veritasium.csv
 ```
