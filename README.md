@@ -113,7 +113,7 @@ The official [YouTube Data API v3](https://developers.google.com/youtube/v3) is 
 
 ## Price
 
-Pay per result, no subscription. Prices checked on 2026-09-26 from the Apify Store:
+Pay per result, no subscription. Prices checked on 2026-10-06 from the Apify API:
 
 | Option | Dislikes | Price per 1,000 videos |
 |---|---|---|
@@ -128,13 +128,15 @@ Examples at $2.00 per 1,000: 100 videos cost $0.20, a 500-video channel costs $1
 
 - Estimates can be far off for small or very new videos with few extension users.
 - Some videos have no Return YouTube Dislike data yet; `dislikes_estimated` is then empty.
-- Private or removed videos can come back with an empty title and view count. Rows the Actor marks with an `error` field (for example an unknown channel) are printed to the terminal and left out of the CSV.
+- Private or removed videos and channels that don't exist return no row and aren't charged; the run lists them in its `ERRORS` record (Apify Console > Storage > Key-value store) and in its status message.
 - Public videos only. Nothing here signs in to YouTube.
 
 ## More
 
 - Every input mode of the YouTube and Instagram scrapers in Node, Python, curl, Apify CLI and Google Sheets: [youtube-instagram-scraper-examples](https://github.com/ArpitGandhi1934/youtube-instagram-scraper-examples)
 - Instagram Reels to text in bulk: [instagram-reels-transcript-bulk](https://github.com/ArpitGandhi1934/instagram-reels-transcript-bulk)
+- Instagram comments to Excel or CSV: [instagram-comments-export](https://github.com/ArpitGandhi1934/instagram-comments-export), which calls the [Instagram Comments Scraper][store-igc]
+- Use the YouTube Scraper from Claude, ChatGPT, Cursor or VS Code through a pinned Apify MCP server: [yugenox-mcp](https://github.com/ArpitGandhi1934/yugenox-mcp)
 - Guides on [yugenox-data.vercel.app](https://yugenox-data.vercel.app): [YouTube dislike count API](https://yugenox-data.vercel.app/youtube/dislike-count-api), [YouTube Data API alternative without quota](https://yugenox-data.vercel.app/youtube/data-api-alternative), [pricing calculator](https://yugenox-data.vercel.app/pricing-calculator)
 - The Actor itself, with its input form, output schema and reviews: [YouTube Scraper on Apify][store-yt]
 
@@ -143,12 +145,13 @@ Examples at $2.00 per 1,000: 100 videos cost $0.20, a 500-video channel costs $1
 - Dislike data: [Return YouTube Dislike](https://returnyoutubedislike.com) ([source code](https://github.com/Anarios/return-youtube-dislike)). Their API terms ask third-party users to credit the project with a link, as above.
 - Not affiliated with YouTube or Google. YouTube is a trademark of Google LLC.
 - The Actor collects publicly available data only. Channel names are personal data in some jurisdictions; follow GDPR, PIPEDA, CCPA and YouTube's terms when you store or publish results. See [Is web scraping legal?][legal].
-- Input keys verified against the Actor's input schema on 2026-09-26 (build 0.1.11).
+- Input keys verified against the Actor's input schema on 2026-09-26 (build 0.1.11) and again on 2026-10-06 (build 0.1.14).
 - MIT licensed. Made by Yugenox Corporation.
 
 <!-- All apify.com links for this README live below. When the Apify affiliate id exists, append ?fpr=<id> to these URLs only. -->
 [store-yt]: https://apify.com/yugenox/youtube-scraper
 [api-yt]: https://apify.com/yugenox/youtube-scraper/api
+[store-igc]: https://apify.com/yugenox/instagram-comments-scraper
 [badge-yt]: https://apify.com/actor-badge?actor=yugenox/youtube-scraper
 [signup]: https://console.apify.com/sign-up
 [legal]: https://blog.apify.com/is-web-scraping-legal/
